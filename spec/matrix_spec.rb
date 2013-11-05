@@ -6,7 +6,7 @@ describe Matriz do
    before :each do
       @f1 = Matriz.new([[1,2],[3,4],[5,6]])
    end
- end
+ 
  
    describe "La matriz se genera correctamente" do
       it "La matriz tiene formato correcto" do
@@ -14,7 +14,7 @@ describe Matriz do
       end
    end
  
-   describe "Almacenamiento de nº de filas y columnas" do
+   describe "Almacenamiento de numero de filas y columnas" do
       it "El numero de filas es correcto" do
          @f1.filas.should eq(3)
       end
