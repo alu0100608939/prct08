@@ -60,6 +60,19 @@ class Matriz
       Matriz.new(new_mat)
    end
    
+   #Sobrecarga del operador de resta
+   def -(other)
+      raise ArgumentError, "Las dimensiones de las matrices no coinciden" unless @filas == other.filas && @columnas == other.columnas
+      new_mat = Array.new
+      @filas.times do |i|
+         fila = Array.new
+         @columnas.times do |j|
+            fila << @elementos[i][j] - other.at(i, j)
+         end
+         new_mat << fila
+      end
+      Matriz.new(new_mat)
+   end
    
 end
 

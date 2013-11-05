@@ -43,7 +43,7 @@ describe Matriz do
    end
    
    it "La resta de matrices se realiza correctamente" do
-    f = Matriz.new([[1,1],[2,2][3,3]])
+    f = Matriz.new([[1,1],[2,2],[3,3]])
     (@f1 - f).should eq (Matriz.new([[0,1],[1,2],[2,3]]))
    end
    it "El producto de matrices se realiza correctamente" do
