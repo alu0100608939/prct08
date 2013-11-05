@@ -30,9 +30,9 @@ describe Matriz do
    end
  end
  describe "Transformacion de una matriz" do
-   it "Matriz transpuesta" do
+   it "Matriz traspuesta" do
      f = Matriz.new([[1,3,5],[2,4,6]])
-     (@f1.transpuesta == f).should be_true;
+     (@f1.traspuesta == f).should be_true;
    end
 #   it "Los elementos de la matriz se almacenan correctamente" do
 #     
