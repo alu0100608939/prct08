@@ -1,4 +1,4 @@
-require "./lib/matrix.rb"
+require "./lib/matriz.rb"
 
 
 describe Matriz do
@@ -12,6 +12,7 @@ describe Matriz do
      f = Matriz.new([[1,2],[3]]).should raise_error
      f_2 = Matriz.new([[1,2],[3,4]]).should_not raise_error
    end
+ end
  
  describe "Almacenamiento de nº de filas y columnas" do
   it "El numero de filas es correcto" do
