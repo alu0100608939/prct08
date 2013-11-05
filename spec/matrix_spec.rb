@@ -39,12 +39,12 @@ describe Matriz do
  describe "Operaciones con dos matrices" do
   it "La suma de matrices se realiza correctamente" do
     f = Matriz.new([[1,1],[2,2][3,3]])
-    (@f1 + f).should eq (Matriz.new([[2,3],[5,6],[8,9]])
+    (@f1 + f).should eq (Matriz.new([[2,3],[5,6],[8,9]]))
    end
    
    it "La resta de matrices se realiza correctamente" do
     f = Matriz.new([[1,1],[2,2][3,3]])
-    (@f1 - f).should eq (Matriz.new([[0,1],[1,2],[2,3]])
+    (@f1 - f).should eq (Matriz.new([[0,1],[1,2],[2,3]]))
    end
  end
    # end
