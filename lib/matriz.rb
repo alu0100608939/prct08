@@ -74,5 +74,22 @@ class Matriz
       Matriz.new(new_mat)
    end
    
+   def *(other)
+      raise ArgumentError, "Las dimensiones de las matrices no coinciden" unless @columnas == other.filas
+      new_mat = Array.new
+      @filas.times do |i|
+         fila = Array.new
+         other.columnas.times do |j|
+            sum = 0
+            @columnas.times do |k|
+               sum += @elementos[i][k] * other.at(k, j)
+            end
+            fila << sum
+         end
+         new_mat << fila
+      end
+      Matriz.new(new_mat)
+   end
+   
 end
 
