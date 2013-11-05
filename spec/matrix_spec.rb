@@ -23,14 +23,21 @@ describe Matriz do
       end
    end
    
-# describe "Almacenamiento de las matrices" do
-#   it "El elemento 0,0 de la matriz se almacena correctamente" do
-#   
-#   end
+ describe "Igualdad entre matrices" do
+   it "Las matrices han de ser iguales" do
+     f = Matriz.new([[1,2],[3,4],[5,6]])
+     (@f1 == f).should be_true;
+   end
+ end
+ describe "Transformacion de una matriz" do
+   it "Matriz transpuesta" do
+     f = Matriz.new([[1,3,5],[2,4,6]])
+     (@f1.transpuesta == f).should be_true;
+   end
 #   it "Los elementos de la matriz se almacenan correctamente" do
 #     
 #   end
-# end
+ end
 #
 # describe "Operaciones con una matriz" do
 #  it "La traspuesta de la matriz se almacena correctamente" do
