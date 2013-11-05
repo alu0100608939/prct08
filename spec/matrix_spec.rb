@@ -50,5 +50,6 @@ describe Matriz do
      a = Matriz.new([[2,0,1],[3,0,0],[5,1,1]])
      b = Matriz.new([[1,0,1],[1,2,1][1,1,0]])
      (@f1 * f).should eq (Matriz.new([[3,1,2],[3,0,3],[7,3,6]])
+  end
  end
 end
