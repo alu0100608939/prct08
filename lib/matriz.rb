@@ -19,7 +19,7 @@ class Matriz
       @elementos[i][j]
    end
    
-   #Sobrecarga del operador ==
+   #Sobrecarga del operador == 
    def == (other)
       iguales = true
       @filas.times do |i|
