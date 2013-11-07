@@ -1,3 +1,5 @@
+require "./lib/frac_main.rb"
+
 class Matriz
    attr_reader :filas, :columnas
 
@@ -80,9 +82,9 @@ class Matriz
       @filas.times do |i|
          fila = Array.new
          other.columnas.times do |j|
-            sum = 0
+            sum = Fraccion.new(0)
             @columnas.times do |k|
-               sum += @elementos[i][k] * other.at(k, j)
+               sum = sum + @elementos[i][k] * other.at(k, j)
             end
             fila << sum
          end
